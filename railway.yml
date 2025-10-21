@@ -1,0 +1,26 @@
+version: 2
+services:
+  backend:
+    source: ./backend
+    build:
+      commands:
+        - npm install
+    start:
+      command: npm start
+    env:
+      NODE_ENV: production
+      PORT: 8080
+    exposedPort: 8080
+
+  frontend:
+    source: ./frontend
+    build:
+      commands:
+        - npm install
+        - npm run build
+    start:
+      command: npm start
+    env:
+      NODE_ENV: production
+      NEXT_PUBLIC_API_BASE_URL: ${{services.backend.RAILWAY_PUBLIC_DOMAIN}}/api
+    exposedPort: 3000
