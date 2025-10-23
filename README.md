@@ -60,20 +60,6 @@ Blockchain: Hyperledger Fabric / Polygon SDK simulation
 Deployment: Docker, AWS/Azure/GCP
 Mapping: Google Maps API / OpenStreetMap
 
-⚙️ Setup (For Review Only)
-# Backend
-cd backend
-npm install
-npm run dev
-
-# Frontend
-cd frontend
-npm install
-npm run dev
-
-
-Create .env files for both directories with required keys.
-
 🔒 Core Features
 
 Immutable blockchain tracking
@@ -111,3 +97,4 @@ Unauthorized reproduction, use, modification, or sharing of this code or its doc
 
 📩 For permissions or authorization, contact:
 suvam.arnavraj@gmail.com
+
