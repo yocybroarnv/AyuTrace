@@ -1,151 +1,113 @@
-# Ayurvedic Herb Traceability System
+AyuTrace – Ayurvedic Herb Traceability System
 
-A blockchain-based full-stack web application for tracking Ayurvedic herbs from farm to consumer with geo-tagging and QR code verification.
+AyuTrace is a blockchain-based full-stack traceability platform developed by Arnav Raj (Cybroarnv) and his team for secure and transparent tracking of Ayurvedic herbs — from farms to consumers — using geo-tagging, QR verification, and immutable blockchain records.
 
-## 🌿 Features
+⚠️ This project is proprietary and shared strictly for recruitment and evaluation purposes.
+Any unauthorized use, modification, or redistribution is strictly prohibited without written consent from the author.
 
-### User Roles & Capabilities
+💡 Overview
 
-- **Farmer/Collector Portal**
-  - Register herb batches with detailed information
-  - Auto-capture GPS location (geo-tagging)
-  - Create immutable blockchain records
-  - Generate unique QR codes
+AyuTrace combines blockchain, geo-tagging, and cloud-based scalability to ensure end-to-end transparency in the Ayurvedic supply chain.
 
-- **Manufacturer/Processor Dashboard**
-  - Scan and verify QR codes
-  - Append processing stages to blockchain
-  - Update batch status
-  - Track processing workflow
+Core Capabilities
 
-- **Regulator/Admin Panel**
-  - View all transactions on interactive map
-  - Monitor compliance and sustainability
-  - Generate reports and analytics
-  - Flag illegal/unapproved sourcing
+Immutable blockchain ledger for herb batches
 
-- **Consumer Module**
-  - Scan QR codes via web camera
-  - View complete herb journey
-  - Access blockchain transaction history
-  - Verify authenticity
+GPS-based geo-tagging at collection points
 
-## 🚀 Tech Stack
+QR code-based consumer verification
 
-### Frontend
-- React.js with Next.js
-- TailwindCSS for styling
-- QR code scanner integration
-- Leaflet.js for mapping
-- React Query for state management
+Role-based dashboards for farmers, manufacturers, regulators, and consumers
 
-### Backend
-- Node.js with Express.js
-- MongoDB for database
-- JWT authentication
-- Multer for file uploads
-- QR code generation
+🧠 System Architecture
+User Roles
 
-### Blockchain
-- Hyperledger Fabric (or Polygon SDK simulation)
-- Smart contracts for herb tracking
-- Immutable transaction records
+Farmer / Collector
 
-### Additional Services
-- Google Maps API / OpenStreetMap
-- AWS/Azure/GCP for deployment
-- Docker for containerization
+Register herb batches with geo-location
 
-## 📁 Project Structure
+Generate QR codes
 
-```
-ayurvedic-traceability/
-├── frontend/              # React.js application
-│   ├── src/
-│   │   ├── components/    # Reusable components
-│   │   ├── pages/         # Page components
-│   │   ├── hooks/         # Custom hooks
-│   │   ├── services/      # API services
-│   │   └── utils/         # Utility functions
-│   └── public/
-├── backend/               # Node.js API server
-│   ├── src/
-│   │   ├── controllers/   # Route controllers
-│   │   ├── models/        # Database models
-│   │   ├── routes/        # API routes
-│   │   ├── middleware/    # Custom middleware
-│   │   └── services/      # Business logic
-│   └── uploads/           # File uploads
-├── blockchain/            # Smart contracts
-│   ├── contracts/         # Solidity contracts
-│   └── scripts/           # Deployment scripts
-└── docker/               # Docker configuration
-```
+Blockchain record creation
 
-## 🛠️ Installation & Setup
+Manufacturer / Processor
 
-### Prerequisites
-- Node.js (v16+)
-- MongoDB
-- Git
+Scan & verify QR codes
 
-### Backend Setup
-```bash
+Append processing data
+
+Manage supply chain workflow
+
+Regulator / Admin
+
+Interactive map of herb sourcing
+
+Compliance monitoring
+
+Analytics and sustainability tracking
+
+Consumer
+
+Scan QR to verify authenticity
+
+Trace complete origin and blockchain record
+
+🛠️ Tech Stack
+
+Frontend: React.js (Next.js), TailwindCSS, Leaflet.js, React Query
+Backend: Node.js (Express.js), MongoDB, JWT Auth, Multer
+Blockchain: Hyperledger Fabric / Polygon SDK simulation
+Deployment: Docker, AWS/Azure/GCP
+Mapping: Google Maps API / OpenStreetMap
+
+⚙️ Setup (For Review Only)
+# Backend
 cd backend
 npm install
 npm run dev
-```
 
-### Frontend Setup
-```bash
+# Frontend
 cd frontend
 npm install
 npm run dev
-```
 
-### Environment Variables
-Create `.env` files in both frontend and backend directories with required configurations.
 
-## 🔧 API Endpoints
+Create .env files for both directories with required keys.
 
-### Authentication
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `GET /api/auth/profile` - Get user profile
+🔒 Core Features
 
-### Herb Management
-- `POST /api/herbs/register` - Register new herb batch
-- `GET /api/herbs/:id` - Get herb batch details
-- `PUT /api/herbs/:id/process` - Add processing stage
-- `GET /api/herbs/qr/:qrCode` - Get herb by QR code
+Immutable blockchain tracking
 
-### Blockchain
-- `POST /api/blockchain/record` - Record transaction
-- `GET /api/blockchain/verify/:hash` - Verify transaction
+Geo-tagging for field data
 
-### Reports & Analytics
-- `GET /api/reports/compliance` - Compliance reports
-- `GET /api/reports/geolocation` - Geo-location data
+Real-time QR-based verification
 
-## 🚢 Deployment
+Admin-side analytics and compliance monitoring
 
-The application is containerized using Docker and can be deployed on:
-- AWS (EC2, ECS, Lambda)
-- Azure (Container Instances, App Service)
-- Google Cloud Platform (Cloud Run, GKE)
+Secure JWT authentication
 
-## 📄 License
+Containerized microservice deployment
 
-This project is licensed under the MIT License.
+🚀 Future Enhancements
 
-## 🤝 Contributing
+IoT sensor data integration
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+Blockchain-based smart certification
 
-## 📞 Support
+AI model for herb authenticity detection
 
-For support and questions, please open an issue on GitHub.
+Sustainability scoring for farmers
+
+📜 License & Ownership
+
+Proprietary License – All Rights Reserved
+© 2025 Arnav Raj (Cybroarnv)
+
+This project is the exclusive intellectual property of Arnav Raj (Cybroarnv).
+It is provided only for professional portfolio and recruiter review.
+
+Unauthorized reproduction, use, modification, or sharing of this code or its documentation
+— in part or whole — is strictly prohibited and may result in legal consequences.
+
+📩 For permissions or authorization, contact:
+suvam.arnavraj@gmail.com
